@@ -1,18 +1,18 @@
 {% set name = "pygaze" %}
 {% set pypiname = "python-" + name %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz"
-  sha256: "e277d55cbe12dfc4d48333696e3e8b9fff0e549ec273fda3add69e8999d10295"
+  url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
+  sha256: cee24ffc2cfa12fd7332c6f04c81b280980abb55e6c7110696c3e5bc3f9577e5
 
 build:
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
 
 requirements:
@@ -43,7 +43,7 @@ about:
   license: GPLv3
   license_family: GPL
   license_file: LICENSE
-  summary: 'A Python library for eye tracking'
+  summary: A Python library for eye tracking
   dev_url: https://github.com/esdalmaijer/PyGaze
   doc_url: http://www.pygaze.org/
 
