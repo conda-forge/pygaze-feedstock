@@ -1,6 +1,6 @@
 {% set name = "pygaze" %}
 {% set pypiname = "python-" + name %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
-  sha256: 29e099391b5a715ffb4666c83460ac1dac10cfcd54408f9f6b941fee5dab3cff
+  sha256: 7d462dc53720fee8f4e9c86ca711f282030edf213fb7f0123a3cb0957ca0c7ee
 
 build:
   noarch: python
