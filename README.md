@@ -1,11 +1,11 @@
-About pygaze
-============
+About pygaze-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygaze-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.pygaze.org/
 
 Package license: GPLv3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygaze-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python library for eye tracking
 
